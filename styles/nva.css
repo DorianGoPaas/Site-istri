@@ -16,6 +16,11 @@
     padding-top: 8vh;
 }
 
+#nva-img {
+    width: 20%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
     #NVA {
         padding: 4vw;
