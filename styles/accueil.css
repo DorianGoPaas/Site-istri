@@ -1,0 +1,29 @@
+#acccueil {
+    padding: 4vw 8vw 8vw 8vw;
+    font-size: large;
+    width: 80%;
+}
+
+#acccueil h3 {
+    color: rgb(102, 102, 102);
+}
+
+#istri-desc-bis {
+    display: flex;
+}
+
+#istri-desc-bis-gauche {
+    padding:  0 2vw 4vw 0;
+}
+
+#istri-desc-bis-droite img{
+    margin: 1vw;
+}
+
+
+@media (max-width: 768px) {
+    #acccueil #istri-desc-bis{
+        flex-direction: column;
+        align-items: center;
+    }
+}

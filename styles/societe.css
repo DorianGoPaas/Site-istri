@@ -1,0 +1,28 @@
+#societe {
+    padding: 2vw;
+    font-size: large;
+    max-width: 100%;
+}
+
+#societe h1 {
+    color: rgb(102, 102, 102);
+}
+
+#societe h3 {
+    color: rgb(102, 102, 102);
+}
+
+#hero_societe {
+    width: 100%;
+    padding-top: 8vh;
+}
+
+@media (max-width: 768px) {
+
+    #societe {
+        padding: 4vw;
+    }
+    #societe-desc {
+        font-size: 1rem;
+    }
+}

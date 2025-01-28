@@ -1,0 +1,29 @@
+#hero {
+    width: 100%;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#bandeau {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background-color: #6da40e;
+    height: 10vh;
+    color: white;
+}
+
+#bandeau-quart-diviseur {
+    width: 1px;
+    height: 70%;
+}
+
+
+@media (max-width: 768px) {
+    #bandeau {
+        display: none;
+    }
+}
