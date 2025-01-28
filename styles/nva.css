@@ -25,4 +25,9 @@
     #NVA {
         padding: 4vw;
     }
+
+    #nva-img {
+        width: 100%;
+        height: auto;
+    }
 }
