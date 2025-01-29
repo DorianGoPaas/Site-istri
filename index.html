@@ -125,7 +125,40 @@
             </div>
             <div class="sautDeLigne"></div>
             <div class="sautDeLigne"></div>
-        </section>
+            <h2>Avis Clients</h2>
+            <section id="avis-clients">
+
+                <div class="avis-card" onclick="voirPlus(this)" data-nom="TopSys" data-avis="./assets/témoignages/topsys.png">
+                    <img src="./assets/c24.jpg" alt="Topsys">
+                    <h3>TopSys</h3>
+                    <p class="short-avis">"TopSys gère tout les encours client avec Commence"</p>
+                    <button class="voir-plus">Voir plus</button>
+                </div>
+            
+                <div class="avis-card" onclick="voirPlus(this)" data-nom="Thales" data-avis="./assets/témoignages/thales.png">
+                    <img src="./assets/c28.jpg" alt="Thales">
+                    <h3>Thales</h3>
+                    <p class="short-avis">"Commence améliore la circulation de l'inforamtion chez Thales Navigation"</p>
+                    <button class="voir-plus">Voir plus</button>
+                </div>
+
+                <div class="avis-card" onclick="voirPlus(this)" data-nom="Sénat" data-avis="./assets/témoignages/Sénat.png">
+                    <img src="./assets/c7.gif" alt="Thales">
+                    <h3>Sénat</h3>
+                    <p class="short-avis">"Commence améliore la circulation de l'inforamtion chez Thales Navigation"</p>
+                    <button class="voir-plus">Voir plus</button>
+                </div>
+
+                </div>
+            </section>
+            
+            <div id="popup" class="hidden" onclick="fermerPopup(event)">
+                <div class="popup-content" onclick="event.stopPropagation();">
+                    <span class="close" onclick="fermerPopup(event)">&times;</span>
+                    <h3 id="popup-nom"></h3>
+                    <p id="popup-avis"></p>
+                </div>
+            </div>
 
     </main>
     <script src="./scripts/main.js"></script>
