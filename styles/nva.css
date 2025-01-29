@@ -1,25 +1,14 @@
 #NVA {
     padding: 2vw;
-    font-size: large;
     max-width: 100%;
-    font-size: 1.25em;
-}
-
-#NVA h1 {
-    color: rgb(102, 102, 102);
-    font-size: 3rem;
-}
-
-
-#hero_nva    {
-    width: 100%;
-    padding-top: 8vh;
 }
 
 #nva-img {
     width: 20%;
     height: auto;
 }
+
+
 
 @media (max-width: 768px) {
     #NVA {

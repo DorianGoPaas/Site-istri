@@ -1,0 +1,32 @@
+#commence {
+    padding: 2vw;
+    max-width: 100%;
+}
+
+#commence-desc {
+    display: flex;
+    align-items: flex-start;
+}
+
+#commence-gauche {
+    
+}
+
+#commence-droite {
+    margin-left: 2vw;
+}
+
+#commence-gauche img {
+    width: 20vw;
+}
+
+@media (max-width: 768px) {
+    #commence-desc {
+        flex-direction: column;
+        display: flex;
+    }
+
+    #commence-gauche img {
+        width: 100%;
+    }
+}

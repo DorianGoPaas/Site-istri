@@ -25,7 +25,6 @@ nav {
 #navbar li {
     margin-left: 20px;
     cursor: pointer;
-    font-size: large;
 }
 
 #navbar li a {
@@ -65,7 +64,6 @@ nav {
     color: black;
 }
 
-
 @media (max-width: 768px) {
     #burger-menu {
         display: flex;
@@ -80,9 +78,18 @@ nav {
         background-color: white;
         width: 100%;
         padding: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 3s ease-in-out;
     }
 
     #navbar.active {
         display: flex;
+        max-height: 300px; /* example max-height */
+    }
+
+    #navbar li a {
+        display: block;
+        width: 100%;
     }
 }
