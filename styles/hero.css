@@ -1,5 +1,6 @@
 .hero-img img {
    height: 50vh;
+   max-width: 100%;
 }
 
 #bandeau {
@@ -22,4 +23,9 @@
     #bandeau {
         display: none;
     }
+
+    .hero-img img {
+        height: 20vh;
+        margin-top: 8vh;
+     }
 }
