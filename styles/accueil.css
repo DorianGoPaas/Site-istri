@@ -41,6 +41,40 @@
     font-weight: 500;
     font-size: 2em;
 }
+#marques-partenaires {
+    padding: 2rem 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners-scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners-scroll {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll 50s linear infinite;
+}
+
+.partners-scroll img {
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: var(--borderRadius1);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
 
 @media (max-width: 768px) {
 
