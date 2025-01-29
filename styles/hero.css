@@ -1,9 +1,5 @@
-#hero {
-    width: 100%;
-}
-
-#hero img {
-    width: 100%;
+.hero-img img {
+   height: 50vh;
 }
 
 #bandeau {

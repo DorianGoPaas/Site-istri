@@ -1,29 +1,66 @@
+@import 'variables.css';
+
 #acccueil {
     padding: 4vw 8vw 8vw 8vw;
     font-size: large;
     width: 80%;
 }
 
-#acccueil h3 {
-    color: rgb(102, 102, 102);
-}
 
-#istri-desc-bis {
+#istri-desc {
     display: flex;
+    align-items: flex-start;
 }
 
 #istri-desc-bis-gauche {
-    padding:  0 2vw 4vw 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: var(--borderRadius1);
+    padding: 2vw;
+    flex: 2;
+}
+
+#istri-desc-bis-droite {
+    flex: 1;
 }
 
 #istri-desc-bis-droite img{
-    margin: 1vw;
+    margin-left: 10vw;
+    border-radius: var(--borderRadius1);
 }
 
+#bandeau {
+    background: linear-gradient(45deg, var(--lightGreen), var(--darkGreen1));
+    padding: 2rem;
+    border-radius: 0 0 var(--borderRadius1) var(--borderRadius1);
+    color: #fff;
+    text-align: center;
+    box-shadow: var(--shadow1);
+}
+
+.bandeau-titre{ 
+    font-weight: 500;
+    font-size: 2em;
+}
 
 @media (max-width: 768px) {
-    #acccueil #istri-desc-bis{
+
+    .title {
+        font-size: var(--titleSizeMobile);
+    }
+
+    #istri-desc{
         flex-direction: column;
         align-items: center;
     }
+
+    #istri-desc-bis-gauche {
+        padding: 6vw;
+        margin-bottom: 2vh;
+    }
+
+    #istri-desc-bis-droite img{
+        margin-left: 0vw;
+    }
+    
 }

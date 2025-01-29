@@ -1,0 +1,9 @@
+:root {
+    --lightGreen : #a0be66;
+    --darkGreen1 : #71884e;
+    --darkGreen2 : #546339;
+    --borderRadius1 : 25px;
+    --shadow1 :0 2px 5px -2px gray;
+    --titleSize : 3em;
+    --titleSizeMobile : 2em;
+}
