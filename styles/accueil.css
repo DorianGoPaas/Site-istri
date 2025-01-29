@@ -61,6 +61,10 @@
     animation: scroll 50s linear infinite;
 }
 
+.partners-scroll:hover {
+    animation-play-state: paused;
+}
+
 .partners-scroll img {
     height: 80px;
     flex-shrink: 0;
