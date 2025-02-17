@@ -10,6 +10,7 @@ nav {
     position: fixed;
     background-color: white;
     box-shadow: var(--shadow1);
+    z-index: 1000;
 }
 
 #navbar {

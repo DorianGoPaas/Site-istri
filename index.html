@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Istri - Accueil</title>
     <link rel="stylesheet" href="./styles/root.css">
     <link rel="icon" href="./assets/logo/logo_istri.png">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Nav -->
@@ -29,8 +31,33 @@
     <main>
         <!-- Hero -->
         <div class="hero">
-            <div class="hero-img">
-                <img src="./assets/hero_img.png" alt="Image hero">
+            <!-- Slider Swiper -->
+            <div class="swiper">
+                <!-- Wrapper Swiper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="http://www.istri.fr/wp-content/uploads/slide-istri-2.jpg" alt="Slide 3">
+                        <a class="slide-overlay" href="#">20 ans d’expérience dans les solutions métiers et le CRM</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="http://www.istri.fr/wp-content/uploads/slide-satisfaction.jpg" alt="Slide 4">
+                        <a class="slide-overlay" href="#">Des résultats rapides et une satisfaction durable</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="http://www.istri.fr/wp-content/uploads/slide-couts.jpg" alt="Slide 5">
+                        <a class="slide-overlay" href="#">Maitrise des coûts et des délais</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="http://www.istri.fr/wp-content/uploads/slide-solutions.jpg" alt="Slide 1">
+                        <a class="slide-overlay" href="#">Des solutions personnalisées et évolutives</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="http://www.istri.fr/wp-content/uploads/slide-technologies-2.jpg" alt="Slide 2">
+                        <a class="slide-overlay" href="#">Des technologies adaptées et fiables</a>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
             <div id="bandeau">
                 <div class="bandeau-quart">
@@ -180,8 +207,9 @@
                     <p id="popup-avis"></p>
                 </div>
             </div>
-
     </main>
-    <script src="./scripts/main.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="scripts/main.js"></script>
 </body>
 </html>

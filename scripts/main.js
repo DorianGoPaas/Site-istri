@@ -1,4 +1,21 @@
-// Nav bar
+document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".swiper", {
+        loop: true, // Active le défilement en boucle
+        autoplay: {
+            delay: 3000, // Temps entre chaque slide en ms
+            disableOnInteraction: false, // Ne pas désactiver l'autoplay après interaction
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true, // Permet de cliquer sur les bullet points
+        },
+        effect: "fade", // Ajoute un effet de fondu
+        speed: 800, // Vitesse de transition
+    });
+});
+   
+                                       // Nav bar
+
 const burgerMenu = document.getElementById("burger-menu");
 const navbar = document.getElementById("navbar");
 
@@ -6,14 +23,16 @@ burgerMenu.addEventListener("click", () => {
     navbar.classList.toggle("active");
 });
 
-// Défilement des partenaires
+                                        // Défilement des partenaires
+
 document.addEventListener("DOMContentLoaded", function () {
     const scrollContainer = document.querySelector(".partners-scroll");
     const clones = scrollContainer.innerHTML;
     scrollContainer.innerHTML += clones; 
 });
 
-// Pop up des avis
+                                        // Pop up des avis
+
 function voirPlus(element) {
     document.getElementById("popup-nom").textContent = element.getAttribute("data-nom");
     const imagesData = element.getAttribute("data-avis");
@@ -50,4 +69,3 @@ document.querySelectorAll('.avis-card').forEach(card => {
         avisImagesContainer.appendChild(imgElement); // Ajoute l'image au conteneur
     });
 });
-
