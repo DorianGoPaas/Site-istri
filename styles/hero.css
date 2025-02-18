@@ -46,7 +46,6 @@
     padding: 1vw;
     color: white;
     font-size: 1.5em;
-
 }
 
 @media (max-width: 768px) {
@@ -54,8 +53,19 @@
         display: none;
     }
 
+    .swiper {
+        height: 30vh;
+    }
+
     .hero-img img {
-        height: 20vh;
+        max-height: 25vh;
         margin-top: 8vh;
+    }
+
+    .slide-overlay {
+        bottom: 2.5rem;
+        font-size: 1em;
+        max-width: 90%;
+        padding: 10px;
     }
 }

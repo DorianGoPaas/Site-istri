@@ -7,6 +7,10 @@ body {
     font-size: 1.25em;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
 .title {
     font-size: var(--titleSize);
     font-weight: 500;
@@ -15,4 +19,10 @@ body {
 
 .sautDeLigne {
     height: 5vh;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
 }
