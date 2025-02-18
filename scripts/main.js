@@ -1,37 +1,4 @@
-// Pop up des avis
-
-function voirPlus(element) {
-    document.getElementById("popup-nom").textContent = element.getAttribute("data-nom");
-    const avisHTML = element.getAttribute("data-avis");
-    const popupAvis = document.getElementById("popup-avis");
-    popupAvis.innerHTML = avisHTML.trim(); // Set HTML content directly
-    document.getElementById("popup").style.display = "flex";
-}
-
-function fermerPopup(event) {
-    if (event.target.id === "popup" || event.target.classList.contains("close")) {
-        document.getElementById("popup").style.display = "none";
-    }
-}
-
-document.querySelectorAll('.avis-card').forEach(card => {
-    const imagesData = card.getAttribute('data-avis'); // Récupère la chaîne avec les liens des images
-    const imagesArray = imagesData.split(','); // Sépare les images par la virgule
-    
-    const avisImagesContainer = card.querySelector('.avis-images'); // Sélectionne le conteneur des images
-    
-    // Vide le conteneur avant d'ajouter les nouvelles images
-    avisImagesContainer.innerHTML = '';
-    
-    // Ajoute chaque image dans le conteneur
-    imagesArray.forEach(imagePath => {
-        const imgElement = document.createElement('img');
-        imgElement.src = imagePath.trim(); // Enlève les espaces autour du lien de l'image
-        imgElement.alt = "Avis Image"; // Texte alternatif pour l'image
-        avisImagesContainer.appendChild(imgElement); // Ajoute l'image au conteneur
-    });
-});
- // Swiper accueil
+                                        // Swiper accueil
 document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".swiper", {
         loop: true, // Active le défilement en boucle
@@ -65,3 +32,46 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollContainer.innerHTML += clones; 
 });
 
+
+
+
+
+
+
+
+
+
+
+// Pop up des avis
+
+function voirPlus(element) {
+    document.getElementById("popup-nom").textContent = element.getAttribute("data-nom");
+    const avisHTML = element.getAttribute("data-avis");
+    const popupAvis = document.getElementById("popup-avis");
+    popupAvis.innerHTML = avisHTML.trim(); // Set HTML content directly
+    document.getElementById("popup").style.display = "flex";
+}
+
+function fermerPopup(event) {
+    if (event.target.id === "popup" || event.target.classList.contains("close")) {
+        document.getElementById("popup").style.display = "none";
+    }
+}
+
+document.querySelectorAll('.avis-card').forEach(card => {
+    const imagesData = card.getAttribute('data-avis'); // Récupère la chaîne avec les liens des images
+    const imagesArray = imagesData.split(','); // Sépare les images par la virgule
+    
+    const avisImagesContainer = card.querySelector('.avis-images'); // Sélectionne le conteneur des images
+    
+    // Vide le conteneur avant d'ajouter les nouvelles images
+    avisImagesContainer.innerHTML = '';
+    
+    // Ajoute chaque image dans le conteneur
+    imagesArray.forEach(imagePath => {
+        const imgElement = document.createElement('img');
+        imgElement.src = imagePath.trim(); // Enlève les espaces autour du lien de l'image
+        imgElement.alt = "Avis Image"; // Texte alternatif pour l'image
+        avisImagesContainer.appendChild(imgElement); // Ajoute l'image au conteneur
+    });
+});
