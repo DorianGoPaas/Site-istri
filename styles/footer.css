@@ -6,7 +6,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     position: relative;
-    z-index: 1000;
+    z-index: 1;
 }
 
 footer a {
