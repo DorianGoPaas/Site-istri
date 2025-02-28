@@ -153,6 +153,7 @@
     margin-top: 10vh;
     overflow-y: auto; 
     max-height: 80vh; 
+    z-index: 1000;
 }
 
 .popup-content h3 {
